@@ -36,8 +36,8 @@ const Image = () => (
 );
 const Title = () => {
     return <h2>The Art of Prompt Engineering with ChatGPT</h2>;
-}
-const Author = () => <h4>Nathan Hunter</h4>
+};
+const Author = () => <h4>Nathan Hunter</h4>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

@@ -49,5 +49,7 @@ body {
 
 /* target the h4 element within the book/author component */
 .book h4 {
-    color: #6e06e6;
+    color: #6e06e6;    
+    margin-top: 0.5rem;
+    letter-spacing: 1.5px;
 }
