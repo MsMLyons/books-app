@@ -32,10 +32,7 @@ const Book = () => {
 // implicit return (Author component) and explicit return (Title component) examples
 // implicit returns return a single expression, while explicit returns return more complex expressions and operations
 const Image = () => (
-    <img
-        src='https://images-na.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81J-JPkAz6L._AC_UL600_SR600,400_.jpg'
-        alt='The Art of Prompt Engineering with ChatGPT'
-    />
+    <img src='./images/book1.jpg' alt='The Art of Prompt Engineering with ChatGPT' />
 );
 const Title = () => {
     return <h2>The Art of Prompt Engineering with ChatGPT</h2>;
