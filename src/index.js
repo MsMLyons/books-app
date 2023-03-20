@@ -1,6 +1,7 @@
 // the React import (line 2) is not necessary in React 18
 import React from "react";
 import ReactDOM from "react-dom/client";
+import './index.css';
 
 // main component to be rendered
 // section component to render the article component, according to the UI
