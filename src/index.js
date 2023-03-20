@@ -15,24 +15,25 @@ const img = './images/book1.jpg';
 const BookList = () => {
     return (
         <section className="booklist">
-            <Book />
-            <Book />
-            <Book />
-            <Book />
+            <Book author={author} title={title} img={img} />
+            <Book author={author} title={title} img={img} />
+            <Book author={author} title={title} img={img} />
+            <Book author={author} title={title} img={img} />
         </section>
     );
 };
 
 
-const Book = () => {    
+const Book = (props) => { 
+    console.log(props);   
     return (
         <article className="book">
             <img 
-                src={img} 
-                alt='The Art of Prompt Engineering with ChatGPT' 
+                src={props.img} 
+                alt={props.title} 
             />
-            <h2>{title}</h2>
-            <h4>{author.toUpperCase()}</h4>
+            <h2>{props.title}</h2>
+            <h4>{props.author.toUpperCase()}</h4>
         </article>
     );
 };
