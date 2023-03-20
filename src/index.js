@@ -10,6 +10,7 @@ const BookList = () => {
             <Book />
             <Book />
             <Book />
+            <Book />
         </section>
     );
 };
@@ -27,13 +28,18 @@ const Book = () => {
 };
 
 // additional components created to be nested in another component
-// implicit return (Image component) and explicit return (Title component) examples
+// implicit return (Author component) and explicit return (Title component) examples
 // implicit returns return a single expression, while explicit returns return more complex expressions and operations
-const Image = () => <h2>Nara's picture (jk - this is a placeholder for the image)</h2>;
+const Image = () => (
+    <img
+        src='https://images-na.ssl-images-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/81J-JPkAz6L._AC_UL600_SR600,400_.jpg'
+        alt='The Art of Prompt Engineering with ChatGPT'
+    />
+);
 const Title = () => {
-    return (<h2>This is a book title about Nara!</h2>)
+    return <h2>The Art of Prompt Engineering with ChatGPT</h2>;
 }
-const Author = () => <h4>Nara, the name of the Author</h4>
+const Author = () => <h4>Nathan Hunter</h4>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
