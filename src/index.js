@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import './index.css';
 
 // main component to be rendered
-// section component to render the article component, according to the UI
+// section component to render the nested article (Book) component
 const BookList = () => {
     return (
         <section className="booklist">
@@ -16,28 +16,17 @@ const BookList = () => {
     );
 };
 
-// nested components
-// article component to render specific data to the section component
+const author = 'Nathan Hunter';
 const Book = () => {
+    const title = 'The Art of Prompt Engineering with ChatGPT<';
     return (
         <article className="book">
-            <Image />
-            <Title />
-            <Author />
+            <img src='./images/book1.jpg' alt='The Art of Prompt Engineering with ChatGPT' />
+            <h2>{title}</h2>
+            <h4>{author}</h4>
         </article>
     );
 };
-
-// additional components created to be nested in another component
-// implicit return (Author component) and explicit return (Title component) examples
-// implicit returns return a single expression, while explicit returns return more complex expressions and operations
-const Image = () => (
-    <img src='./images/book1.jpg' alt='The Art of Prompt Engineering with ChatGPT' />
-);
-const Title = () => {
-    return <h2>The Art of Prompt Engineering with ChatGPT</h2>;
-};
-const Author = () => <h4>Nathan Hunter</h4>;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
