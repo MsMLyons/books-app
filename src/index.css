@@ -10,3 +10,44 @@ body {
     background: #f1f5f8;
     color: #222;
 }
+
+/* style booklist component */
+.booklist {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+/* resizes booklist grid based on minimum screen width */
+@media screen and (min-width: 768px) {
+    .booklist {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* style book component */
+.book {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* target the image component within the book/image component */
+.book img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* target the h2 element within the book/title component */
+.book h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* target the h4 element within the book/author component */
+.book h4 {
+    color: #6e06e6;
+}

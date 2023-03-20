@@ -7,7 +7,7 @@ import './index.css';
 // section component to render the article component, according to the UI
 const BookList = () => {
     return (
-        <section>
+        <section className="booklist">
             <Book />
             <Book />
             <Book />
@@ -20,7 +20,7 @@ const BookList = () => {
 // article component to render specific data to the section component
 const Book = () => {
     return (
-        <article>
+        <article className="book">
             <Image />
             <Title />
             <Author />
